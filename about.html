@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Add your about page styles here */
+        .about-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .about-container h2 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        .about-container p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"> <img src="images/logo.png" alt="" width="125px"> </a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="Account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="shopping.html"> <img src="images/cart.png" width="30px" height="30px" alt=""> </a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <div class="about-container">
+        <h2>About Us</h2>
+        <p>
+            At RED Store.com, we understand that the journey begins with the right step. Specializing in an exquisite collection of shoes and socks, we've curated a diverse range that caters to every taste and occasion. Our mission is simple yet profound
+            to provide footwear that not only complements your style but also offers the comfort your feet deserve.
+             One of the hallmarks of SoleElegance.com is our extensive catalog.
+             Whether you're in search of trendy sneakers, classic formal shoes, 
+             or cozy socks to keep you warm during colder seasons, we have it all. 
+             Our product range spans across various styles, colors, and sizes, ensuring that every customer finds their perfect fit.
+        </p>
+        <p>
+            One of the hallmarks of SoleElegance.com is our extensive catalog.
+             Whether you're in search of trendy sneakers, classic formal shoes, or cozy socks to keep you warm during colder seasons, 
+             we have it all. Our product range spans across various styles, colors, and sizes, ensuring that every customer finds their perfect fit.
+           We believe that true style is a marriage of aesthetics and quality.
+            At SoleElegance.com, every product undergoes rigorous quality checks to meet our high standards. 
+            We source our shoes from reputable manufacturers, prioritizing materials that are not only stylish 
+            but also durable.  Our socks, crafted from the finest fabrics, promise both warmth and breathability.
+        </p>
+    </div>
+
+    <!-- ... Your existing footer code ... -->
+    <div class="footer">
+        <div class="container">
+                <div class="row">
+                        <div class="footer-col-1">
+                                <h3>Download Our App</h3>
+                                <p>Download App for Android and Ios Mobile Phone</p>
+                                <div class="app-logo">
+                                        <img src="images/play-store.png" alt="">
+                                        <img src="images/app-store.png" alt="">
+                                </div>
+                        </div>
+                        <div class="footer-col-2">
+                                <img src="images/logo-white.png" alt="">
+                                <p>Our Purpose Is To Sustainably Make The Pleasure and Benifits of
+                                        Sports Accessible to the MANY.</p>
+                        </div>
+                        <div class="footer-col-3">
+                                <h3>Useful Link</h3>
+                                <ul>
+                                        <li>Coupons</li>
+                                        <li>Blog Post</li>
+                                        <li>Return Policy</li>
+                                        <li>Join Affiliate</li>
+                                </ul>
+                        </div>
+                        <div class="footer-col-4">
+                                <h3>Follow Us</h3>
+                                <ul>
+                                        <li>Facebook</li>
+                                        <li>Twitter</li>
+                                        <li>Instagram</li>
+                                        <li>Youtube</li>
+                                </ul>
+                        </div>
+                </div>
+                <hr>
+                <p class="copy-right"> Copyright 2021</p>
+        </div>
+</div>
+
+    <!-- ------------------js for toggle menu------------ -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
